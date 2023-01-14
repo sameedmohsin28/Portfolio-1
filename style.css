@@ -1,67 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 nav {
-    height: 10vh;
-    width: 100%;
-    background-color: aqua;
-    display: flex;
-    justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    align-content: space-around;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
 
 }
 
 .logo {
-    height: 10vh;
-    padding-left: 10px;
-    flex: none;
+  height: 10vh;
+  padding-left: 10px;
+  flex: none;
 }
 
 .logo-text {
-    font-family: 'Poppins', sans-serif;
-    color: red;
-    font-size: 35px;
-    padding-left: 10px;
-    font-weight: bold;
-    flex: none;
+  font-family: 'Poppins', sans-serif;
+  color: red;
+  font-size: 35px;
+  padding-left: 10px;
+  font-weight: bold;
+  flex: none;
 }
 
 .hamburger {
-    display: flex;
+  display: flex;
 }
 
 section {
-    text-align: center;
-    flex: none;
+  text-align: center;
+  flex: none;
 }
 
 .top-heading {
-    flex: none;
-    font-weight: 5000;
+  flex: none;
+  font-weight: 5000;
 }
 
 .connect {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
