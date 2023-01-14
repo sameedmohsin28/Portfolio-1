@@ -39,7 +39,7 @@ nav {
     font-size: 35px;
     padding-left: 10px;
     font-weight: bold;
-    flex: none:
+    flex: none;
 }
 
 .hamburger {
@@ -48,11 +48,11 @@ nav {
 
 section {
     text-align: center;
-    flex: none:
+    flex: none;
 }
 
 .top-heading {
-    flex: none:
+    flex: none;
     font-weight: 5000;
 }
 
