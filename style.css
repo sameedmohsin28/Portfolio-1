@@ -6,7 +6,12 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  background-position: 120px 100px;
+}
+
+body {
+  background-position: 60px 100px;
+  background-image: url('./Images/header-shapes mobile@2x.svg');
+  background-repeat: no-repeat
 }
 
 nav {
