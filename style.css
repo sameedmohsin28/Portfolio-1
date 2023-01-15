@@ -11,7 +11,7 @@
 body {
   background-position: 60px 100px;
   background-image: url('./Images/header-shapes mobile@2x.svg');
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 
 nav {
