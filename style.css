@@ -10,14 +10,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url('./Images/header-shapes mobile@2x.svg');
-  background-position: 30px 100px;
-  background-repeat: no-repeat;
+  background-color: #e5e5e5;
 }
 
 header {
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 92px;
 }
 
@@ -55,7 +53,7 @@ nav {
   align-items: flex-start;
   position: absolute;
   right: 24px;
-  left: 330px;
+  left: 300px;
   top: calc(50% - 40px / 2);
   width: 40px;
   height: 40px;
@@ -68,6 +66,17 @@ nav {
   height: 30px;
   left: 3;
   top: 6;
+}
+
+.shapes-background {
+  position: absolute;
+  width: 375px;
+  height: 748px;
+  background-image: url('./Images/header-shapes mobile@2x.svg');
+  background-position: 0 122px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 0 0 0 100px;
 }
 
 .intro-section {
@@ -312,14 +321,17 @@ nav {
 
 /* ================ About Section ========================= */
 .about-section {
+  background-color: #fff;
+  border-radius: 0 100px 0 0;
   display: grid;
   grid-template-rows: auto auto;
   gap: 24px;
   position: absolute;
   top: 3506px;
   width: 375px;
-  height: 604px;
+  height: 1125.15px;
   left: calc(50% - 375px / 2 + 2px);
+  padding: 114px 24px;
 }
 
 .about-myself {
