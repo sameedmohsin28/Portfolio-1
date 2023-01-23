@@ -254,12 +254,10 @@ nav {
   color: #344563;
 }
 
-.tags {
-  
-}
+
 
 .html {
-  
+  margin-right: 12px;
   float: left;
   padding: 4px 12px;
   width: 53px;
@@ -274,6 +272,7 @@ nav {
 
 .css {
   float: left;
+  margin-right: 12px;
   padding: 4px 12px;
   width: 45px;
   height: 24px;
