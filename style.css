@@ -255,12 +255,12 @@ nav {
 }
 
 .tags {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
+  
 }
 
 .html {
+  
+  float: left;
   padding: 4px 12px;
   width: 53px;
   height: 24px;
@@ -273,6 +273,7 @@ nav {
 }
 
 .css {
+  float: left;
   padding: 4px 12px;
   width: 45px;
   height: 24px;
@@ -285,6 +286,7 @@ nav {
 }
 
 .javascript {
+  float: left;
   padding: 4px 12px;
   width: 89px;
   height: 24px;
