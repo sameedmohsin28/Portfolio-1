@@ -254,13 +254,11 @@ nav {
   color: #344563;
 }
 
-.tags {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
+
 
 .html {
+  margin-right: 12px;
+  float: left;
   padding: 4px 12px;
   width: 53px;
   height: 24px;
@@ -273,6 +271,8 @@ nav {
 }
 
 .css {
+  float: left;
+  margin-right: 12px;
   padding: 4px 12px;
   width: 45px;
   height: 24px;
@@ -285,6 +285,7 @@ nav {
 }
 
 .javascript {
+  float: left;
   padding: 4px 12px;
   width: 89px;
   height: 24px;
@@ -598,4 +599,25 @@ nav {
   font-size: 20px;
   line-height: 24px;
   color: #000;
+}
+
+.contact-form {
+  width: 375px;
+  height: 779px;
+  background: #6070ff;
+  border-top-left-radius: 100px;
+  position: absolute;
+  top: 4633px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form h2 {
+  font-weight: 700;
+  color: #fff;
+  line-height: 52px;
+  font-size: 40px;
+  position: absolute;
+  top: 103px;
 }
