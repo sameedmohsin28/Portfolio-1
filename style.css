@@ -17,6 +17,7 @@ header {
   position: absolute;
   width: 100%;
   height: 92px;
+  left: calc(50% - 375px / 2 + 2px);
 }
 
 nav {
@@ -70,6 +71,7 @@ nav {
 
 .shapes-background {
   position: absolute;
+  left: calc(50% - 375px / 2 + 2px);
   width: 375px;
   height: 748px;
   background-image: url('./Images/header-shapes mobile@2x.svg');
@@ -254,13 +256,9 @@ nav {
   color: #344563;
 }
 
-.tags {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
-
 .html {
+  margin-right: 12px;
+  float: left;
   padding: 4px 12px;
   width: 53px;
   height: 24px;
@@ -273,6 +271,8 @@ nav {
 }
 
 .css {
+  float: left;
+  margin-right: 12px;
   padding: 4px 12px;
   width: 45px;
   height: 24px;
@@ -285,6 +285,7 @@ nav {
 }
 
 .javascript {
+  float: left;
   padding: 4px 12px;
   width: 89px;
   height: 24px;
@@ -329,7 +330,7 @@ nav {
   position: absolute;
   top: 3506px;
   width: 375px;
-  height: 1125.15px;
+  height: 1275.15px;
   left: calc(50% - 375px / 2 + 2px);
   padding: 114px 24px;
 }
@@ -598,4 +599,124 @@ nav {
   font-size: 20px;
   line-height: 24px;
   color: #000;
+}
+
+.contact-form {
+  width: 375px;
+  height: 790px;
+  background: #6070ff;
+  border-top-left-radius: 100px;
+  position: absolute;
+  top: 4670px;
+  left: calc(50% - 375px / 2 + 2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ellipse-image {
+  position: absolute;
+  left: 328px;
+  top: 48.75px;
+}
+
+.up-rectangle {
+  position: absolute;
+  left: 310px;
+  top: 21px;
+}
+
+.blue-circle {
+  position: absolute;
+  left: 153px;
+  top: 55px;
+}
+
+.down-rectangle {
+  position: absolute;
+  left: 253.28px;
+  top: 676.27px;
+}
+
+.white-circle {
+  position: absolute;
+  left: 256.38px;
+  top: 705.27px;
+}
+
+.contact-form h2 {
+  font-weight: 700;
+  color: #fff;
+  line-height: 52px;
+  font-size: 40px;
+  position: absolute;
+  top: 103px;
+}
+
+.contact-form p {
+  position: absolute;
+  width: 327px;
+  height: 102px;
+  top: 171px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+form {
+  position: absolute;
+  top: 360px;
+  list-style: none;
+}
+
+input {
+  width: 327px;
+  height: 48px;
+  margin: 10px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  color: #b3bac5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 15px;
+}
+
+textarea {
+  width: 327px;
+  height: 170px;
+  margin: 10px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  color: #b3bac5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 15px;
+}
+
+.submit-button {
+  width: 140px;
+  height: 48px;
+  margin: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  border-radius: 8px;
+  border-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+.end-line-image {
+  position: absolute;
+  top: 777px;
+  left: 120px;
 }
