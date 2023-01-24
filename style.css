@@ -600,3 +600,24 @@ nav {
   line-height: 24px;
   color: #000;
 }
+
+.contact-form {
+  width: 375px;
+  height: 779px;
+  background: #6070ff;
+  border-top-left-radius: 100px;
+  position: absolute;
+  top: 4633px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form h2 {
+  font-weight: 700;
+  color: #fff;
+  line-height: 52px;
+  font-size: 40px;
+  position: absolute;
+  top: 103px;
+}
