@@ -109,7 +109,8 @@ nav {
 @media (max-width: 768px) {
   .top-heading-desktop {
     display: none;
-  } 
+  }
+
 }
 
 .my-description {
@@ -177,7 +178,10 @@ nav {
 }
 
 /* first part of the section */
-.first-project, .second-project, .third-project, .fourth-project {
+.first-project,
+.second-project,
+.third-project,
+.fourth-project {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,6 +202,7 @@ nav {
   .desktop-card-work {
     display: none;
   }
+
   .details-container-desktop {
     display: none;
   }
@@ -746,10 +751,10 @@ textarea {
   body {
     width: 100%;
   }
-  
+
   .shapes-background {
     position: absolute;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: 916px;
     background-image: url('./Images/Header\ bg\ 3.svg');
@@ -763,7 +768,7 @@ textarea {
     position: absolute;
     width: 100%;
     height: 72px;
-    left: 0px;
+    left: 0;
   }
 
   nav {
@@ -789,10 +794,10 @@ textarea {
   }
 
   [class*="nav-"] {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
   }
 
   .hamburger-container {
@@ -801,33 +806,36 @@ textarea {
 
   .intro-section {
     width: 100%;
-  height: 916px;
-  left: 0px;
-  top: 71px;
-  padding: 255px 18% 255px 18%;
-}
+    height: 916px;
+    left: 0;
+    top: 71px;
+    padding: 255px 18% 255px 18%;
+  }
 
   .top-heading {
     display: none;
   }
 
   .top-heading-desktop {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
   }
 
   .middle-section {
-  width: 100%;
-  height: 2694px;
-  left: 0px;
-  top: 917px;
-  padding: 5.3% 12.5% 5.3% 12.5%;
-  margin-top: 72px;
-  row-gap: 142px;
+    width: 100%;
+    height: 2694px;
+    left: 0;
+    top: 917px;
+    padding: 5.3% 12.5% 5.3% 12.5%;
+    margin-top: 72px;
+    row-gap: 142px;
   }
-  
-  .first-project, .second-project, .third-project, .fourth-project {
+
+  .first-project,
+  .second-project,
+  .third-project,
+  .fourth-project {
     position: relative;
     background: #fff;
     border: 1px solid #dfe1e6;
@@ -840,37 +848,41 @@ textarea {
     grid-template-columns: 50% 50%;
     column-gap: 22px;
   }
-  
+
   .first-project {
     min-height: 490px;
   }
-  
+
   .second-project {
     min-height: 610px;
   }
-  
+
   .third-project {
     min-height: 600px;
   }
-  
+
   .fourth-project {
     min-height: 515px;
   }
-  
-  .first-project-work-image, .second-project-work-image, .third-project-work-image, .fourth-project-work-image {
+
+  .first-project-work-image,
+  .second-project-work-image,
+  .third-project-work-image,
+  .fourth-project-work-image {
     display: none;
   }
-  
+
   .desktop-card-work {
     order: 0;
     width: 100%;
     height: 100%;
   }
-  
-  .dcw2, .dcw4 {
+
+  .dcw2,
+  .dcw4 {
     order: 2;
   }
-  
+
   .details-container-desktop {
     order: 1;
     display: flex;
@@ -911,7 +923,7 @@ textarea {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+    box-shadow: 0px 8px 16px;
     border: rgba(64, 83, 252, 0.24);
     border-radius: 8px;
   }
@@ -932,19 +944,21 @@ textarea {
   }
 
   [class*="-frame"] {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  left: calc(50% - 48px/2 - 25px);
-  top: 12px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: calc(50% - 48px / 2 - 25px);
+    top: 12px;
   }
 
-  .html-text, .css-text, .js-text {
-  position: absolute;
-  width: 98px;
-  height: 24px;
-  left: 12px;
-  top: 76px;
+  .html-text,
+  .css-text,
+  .js-text {
+    position: absolute;
+    width: 98px;
+    height: 24px;
+    left: 12px;
+    top: 76px;
   }
 
   .heading-and-highlights {
@@ -998,7 +1012,9 @@ textarea {
     width: 100%;
   }
 
-  .lang-js, .lang-html, .lang-css {
+  .lang-js,
+  .lang-html,
+  .lang-css {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1007,7 +1023,8 @@ textarea {
     height: 120px;
   }
 
-  .frameworks, .skills-section {
+  .frameworks,
+  .skills-section {
     width: 100%;
   }
 
@@ -1034,15 +1051,16 @@ textarea {
     top: 340px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 447px;
   }
 
-   .submit-button {
+  .submit-button {
     margin: 0 45% 0 33%;
-   }
+  }
 
-   .contact-form-background {
+  .contact-form-background {
     display: block;
     background-image: url("../Images/desktopcontactformbackgroundshapes.svg");
     background-position: 0 -10px;
@@ -1051,13 +1069,18 @@ textarea {
     left: 0px;
     width: 100%;
     height: 700px;
-   }
+  }
 
-   .end-line-image {
+  .end-line-image {
     display: none;
-   }
+  }
 
-   .ellipse-image, .up-rectangle, .blue-circle, .down-rectangle, .white-circle {
+  .ellipse-image,
+  .up-rectangle,
+  .blue-circle,
+  .down-rectangle,
+  .white-circle {
     display: none;
-   }
+  }
+  
 }
