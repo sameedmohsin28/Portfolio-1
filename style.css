@@ -13,9 +13,23 @@ body {
   background-color: #e5e5e5;
 }
 
+@media (max-width: 768px) {
+  .shapes-background {
+    position: absolute;
+    left: calc(50% - 375px / 2 + 2px);
+    width: 375px;
+    height: 748px;
+    background-image: url('./Images/header-shapes mobile@2x.svg');
+    background-position: 0 122px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 0 0 0 100px;
+  }
+}
+
 header {
   position: absolute;
-  width: 100%;
+  width: 375px;
   height: 92px;
   left: calc(50% - 375px / 2 + 2px);
 }
@@ -28,6 +42,12 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .navi-links {
+    display: none;
+  }
 }
 
 .logo-container {
@@ -49,9 +69,6 @@ nav {
 }
 
 .hamburger-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   position: absolute;
   right: 24px;
   left: 300px;
@@ -67,18 +84,6 @@ nav {
   height: 30px;
   left: 3;
   top: 6;
-}
-
-.shapes-background {
-  position: absolute;
-  left: calc(50% - 375px / 2 + 2px);
-  width: 375px;
-  height: 748px;
-  background-image: url('./Images/header-shapes mobile@2x.svg');
-  background-position: 0 122px;
-  background-repeat: no-repeat;
-  background-color: #fff;
-  border-radius: 0 0 0 100px;
 }
 
 .intro-section {
@@ -99,6 +104,12 @@ nav {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+}
+
+@media (max-width: 768px) {
+  .top-heading-desktop {
+    display: none;
+  } 
 }
 
 .my-description {
@@ -166,7 +177,7 @@ nav {
 }
 
 /* first part of the section */
-.first-project {
+.first-project, .second-project, .third-project, .fourth-project {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,10 +188,19 @@ nav {
   border-radius: 16px;
 }
 
-.work-image {
+[class*="-project-work-image"] {
   order: 0;
   width: 295px;
   height: 220px;
+}
+
+@media (max-width: 768px) {
+  .desktop-card-work {
+    display: none;
+  }
+  .details-container-desktop {
+    display: none;
+  }
 }
 
 .details-container {
@@ -307,7 +327,6 @@ nav {
 }
 
 .project-text {
-  /* position: absolute; */
   width: 124px;
   height: 48px;
   padding: 12px;
@@ -421,7 +440,7 @@ nav {
   height: 464.15px;
 }
 
-.languages-palceholder {
+.languages-placeholder {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -430,11 +449,11 @@ nav {
 }
 
 .languages-heading {
+  width: 327px;
+  height: 72px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 327px;
-  height: 72px;
 }
 
 .lang-head-text {
@@ -601,6 +620,7 @@ nav {
   color: #000;
 }
 
+/* ========== Contact Form Page ========== */
 .contact-form {
   width: 375px;
   height: 790px;
@@ -719,4 +739,325 @@ textarea {
   position: absolute;
   top: 777px;
   left: 120px;
+}
+
+/* =============== Desktop Version ============== */
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+  }
+  
+  .shapes-background {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 916px;
+    background-image: url('./Images/Header\ bg\ 3.svg');
+    background-position: 170px 160px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 0 0 0 100px;
+  }
+
+  header {
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    left: 0px;
+  }
+
+  nav {
+    width: 100%;
+    height: 72px;
+    top: 0;
+  }
+
+  .logo-container {
+    left: 10%;
+  }
+
+  .navi-links {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 259px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    justify-items: center;
+  }
+
+  [class*="nav-"] {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  }
+
+  .hamburger-container {
+    display: none;
+  }
+
+  .intro-section {
+    width: 100%;
+  height: 916px;
+  left: 0px;
+  top: 71px;
+  padding: 255px 18% 255px 18%;
+}
+
+  .top-heading {
+    display: none;
+  }
+
+  .top-heading-desktop {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  }
+
+  .middle-section {
+  width: 100%;
+  height: 2694px;
+  left: 0px;
+  top: 917px;
+  padding: 5.3% 12.5% 5.3% 12.5%;
+  margin-top: 72px;
+  row-gap: 142px;
+  }
+  
+  .first-project, .second-project, .third-project, .fourth-project {
+    position: relative;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 100%;
+    height: 43vw;
+    padding: 24px;
+    padding-right: 48px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 22px;
+  }
+  
+  .first-project {
+    min-height: 490px;
+  }
+  
+  .second-project {
+    min-height: 610px;
+  }
+  
+  .third-project {
+    min-height: 600px;
+  }
+  
+  .fourth-project {
+    min-height: 515px;
+  }
+  
+  .first-project-work-image, .second-project-work-image, .third-project-work-image, .fourth-project-work-image {
+    display: none;
+  }
+  
+  .desktop-card-work {
+    order: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .dcw2, .dcw4 {
+    order: 2;
+  }
+  
+  .details-container-desktop {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .details-container {
+    display: none;
+  }
+
+  .ruby-on-rails {
+    float: left;
+    margin-right: 12px;
+    padding: 4px 12px;
+    width: 106px;
+    height: 24px;
+    background: #ebebff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6070ff;
+  }
+
+  .project-button {
+    position: relative;
+    top: 10px;
+  }
+
+  .third-project-button-desktop {
+    width: 124px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+    border: rgba(64, 83, 252, 0.24);
+    border-radius: 8px;
+  }
+
+  .third-project-text-desktop {
+    position: relative;
+    width: 124px;
+    height: 48px;
+    padding: 12px;
+    background: #4053fc;
+    top: calc(50% - 48px / 2);
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  [class*="-frame"] {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: calc(50% - 48px/2 - 25px);
+  top: 12px;
+  }
+
+  .html-text, .css-text, .js-text {
+  position: absolute;
+  width: 98px;
+  height: 24px;
+  left: 12px;
+  top: 76px;
+  }
+
+  .heading-and-highlights {
+    gap: 12px;
+  }
+
+  .about-section {
+    grid-template-columns: 41.5% 58.9%;
+    column-gap: 25px;
+    padding: 142px 9.8% 142px 9.8%;
+    width: 100%;
+    left: 0;
+    height: 900px;
+    top: 3940px;
+  }
+
+  .skills {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .connect-container-about {
+    margin: 12px 0 12px 0;
+  }
+
+  .resume {
+    position: relative;
+    top: 20px;
+  }
+
+  .languages-placeholder {
+    width: 100%;
+    height: 216px;
+  }
+
+  .languages-heading {
+    width: 100%;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .languages-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .lang-js, .lang-html, .lang-css {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 122px;
+    height: 120px;
+  }
+
+  .frameworks, .skills-section {
+    width: 100%;
+  }
+
+  .contact-form {
+    top: 4619px;
+    width: 100%;
+    left: 0;
+    padding: 142px 22.15% 127px 22.15%;
+    height: 846px;
+  }
+
+  .contact-form h2 {
+    width: 100%;
+    text-align: center;
+    top: 142px;
+  }
+
+  .contact-form p {
+    width: 569px;
+    top: 210px;
+  }
+
+  form {
+    top: 340px;
+  }
+
+  input, textarea {
+    width: 447px;
+  }
+
+   .submit-button {
+    margin: 0 45% 0 33%;
+   }
+
+   .contact-form-background {
+    display: block;
+    background-image: url("../Images/desktopcontactformbackgroundshapes.svg");
+    background-position: 0 -10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 700px;
+   }
+
+   .end-line-image {
+    display: none;
+   }
+
+   .ellipse-image, .up-rectangle, .blue-circle, .down-rectangle, .white-circle {
+    display: none;
+   }
 }
