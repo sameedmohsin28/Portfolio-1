@@ -168,7 +168,7 @@ nav {
   top: 718px;
   left: calc(50% - 375px / 2 + 2px);
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-items: center;
   row-gap: 88px;
   width: 375px;
@@ -746,7 +746,7 @@ textarea {
 }
 
 /* =============== Desktop Version ============== */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   body {
     width: 100%;
   }
@@ -812,13 +812,13 @@ textarea {
   }
 
   .top-heading {
-    display: none;
-  }
-
-  .top-heading-desktop {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
+  }
+
+  .heading-break {
+    display: none;
   }
 
   .middle-section {
@@ -827,7 +827,7 @@ textarea {
     left: 0;
     top: 917px;
     padding: 5.3% 12.5% 5.3% 12.5%;
-    margin-top: 72px;
+    /* margin-top: 72px; */
     row-gap: 142px;
   }
 
@@ -839,8 +839,8 @@ textarea {
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    width: 100%;
-    height: 43vw;
+    width: 80vw;
+    /* height: 35vw; */
     padding: 24px;
     padding-right: 48px;
     display: grid;
@@ -848,7 +848,7 @@ textarea {
     column-gap: 22px;
   }
 
-  .first-project {
+  /* .first-project {
     min-height: 490px;
   }
 
@@ -862,20 +862,15 @@ textarea {
 
   .fourth-project {
     min-height: 515px;
-  }
+  } */
 
   .first-project-work-image,
   .second-project-work-image,
   .third-project-work-image,
   .fourth-project-work-image {
-    display: none;
-  }
-
-  .desktop-card-work {
     order: 0;
     width: 100%;
-    height: 100%;
-  }
+    height: 100%;  }
 
   .dcw2,
   .dcw4 {
@@ -896,6 +891,46 @@ textarea {
     display: none;
   }
 
+  .project-heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+  
+  .project-type {
+    order: -2;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+  
+  .which-end {
+    order: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+  
+  .project-year {
+    order: 2;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+  
+  .project-decription {
+    width: 295px;
+    height: 76px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
   .ruby-on-rails {
     float: left;
     margin-right: 12px;
@@ -914,8 +949,34 @@ textarea {
     position: relative;
     top: 10px;
   }
+  
+  .project-button:hover {
+    width: 124px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 8px 16px rgba(64, 83 252, 0.24);
+    border-radius: 8px
+  }
 
-  .third-project-button-desktop {
+  .project-text:hover {
+    position: relative;
+    width: 124px;
+    height: 48px;
+    padding: 12px;
+    background: #6070ff;
+    top: calc(50% - 48px / 2);
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+  }
+  
+  .project-button:active {
     width: 124px;
     height: 48px;
     display: flex;
@@ -927,14 +988,14 @@ textarea {
     border-radius: 8px;
   }
 
-  .third-project-text-desktop {
+  .project-text:active {
     position: relative;
     width: 124px;
     height: 48px;
     padding: 12px;
-    background: #4053fc;
+    background: #2230d2;
     top: calc(50% - 48px / 2);
-    border: 1px solid #6070ff;
+    border: 1px solid #2230d2;
     border-radius: 8px;
     font-weight: 500;
     font-size: 17px;
@@ -965,6 +1026,8 @@ textarea {
   }
 
   .about-section {
+    position: absolute;
+    display: grid;
     grid-template-columns: 41.5% 58.9%;
     column-gap: 25px;
     padding: 142px 9.8% 142px 9.8%;
@@ -972,6 +1035,7 @@ textarea {
     left: 0;
     height: 900px;
     top: 3940px;
+    margin-top: -100px;
   }
 
   .skills {
@@ -1062,7 +1126,7 @@ textarea {
   .contact-form-background {
     display: block;
     background-image: url("../Images/desktopcontactformbackgroundshapes.svg");
-    background-position: 0 -10px;
+    background-position: center;
     background-repeat: no-repeat;
     position: absolute;
     left: 0;
@@ -1080,5 +1144,74 @@ textarea {
   .down-rectangle,
   .white-circle {
     display: none;
+  }
+}
+
+@media (min-width: 1375px) {
+  .about-section {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 2090px) {
+  .about-section,
+  .contact-form {
+    margin-top: 200px;
+  }
+}
+
+@media (min-width: 2160px) {
+  .about-section,
+  .contact-form {
+    margin-top: 300px;
+  }
+}
+
+@media (min-width: 2240px) {
+  .about-section,
+  .contact-form {
+    margin-top: 400px;
+  }
+}
+
+@media (min-width: 2320px) {
+  .about-section,
+  .contact-form {
+    margin-top: 500px;
+  }
+}
+
+@media (min-width: 2408px) {
+  .about-section,
+  .contact-form {
+    margin-top: 600px;
+  }
+}
+
+@media (min-width: 2240px) {
+  .about-section,
+  .contact-form {
+    margin-top: 700px;
+  }
+}
+
+@media (min-width: 2564px) {
+  .about-section,
+  .contact-form {
+    margin-top: 800px;
+  }
+}
+
+@media (min-width: 2648px) {
+  .about-section,
+  .contact-form {
+    margin-top: 900px;
+  }
+}
+
+@media (min-width: 828px) {
+  .about-section,
+  .contact-form {
+    margin-top: -200px;
   }
 }
