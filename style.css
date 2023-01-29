@@ -79,10 +79,10 @@ nav {
 }
 
 .intro-heading {
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
 }
 
 .intro-description {
@@ -262,7 +262,7 @@ color: #172b4d;
   padding: 12px;
   margin: 12px 0;
   border-radius: 8px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -289,7 +289,7 @@ color: #172b4d;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 100%;
   height: fit-content;
@@ -299,7 +299,7 @@ color: #172b4d;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172b4d
+  color: #172b4d;
 }
 
 .about-description {
@@ -326,7 +326,7 @@ color: #172b4d;
 
 .social-icons-about {
   width: 24px;
-  height: 24px
+  height: 24px;
 }
 
 .about-resume-button {
@@ -345,16 +345,16 @@ color: #172b4d;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 100%;
 }
 
 .about-languages-list-container {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 100%;
 }
 
 .languages-dropdown-menu,
@@ -543,7 +543,7 @@ textarea {
   }
 
   .hamburger-btn {
-    display: none
+    display: none;
   }
 
   .nav-list-desktop {
@@ -558,10 +558,10 @@ textarea {
   .nav-portfolio,
   .nav-about,
   .nav-contact {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
   }
 
   .logo {
@@ -579,10 +579,10 @@ textarea {
   }
 
   .intro-heading {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
-  color: #091e42;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
   }
 
   .tablet-heading {
@@ -590,16 +590,14 @@ textarea {
   }
 
   .intro-description {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #344563
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
   }
 
   .project-work-card {
     flex-direction: row;
-
-
   }
 
   .project-work-card:nth-of-type(even) {
@@ -648,15 +646,15 @@ textarea {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #344563
+    color: #344563;
   }
 
-  .desktop-your-role { 
+  .desktop-your-role {
     display: block;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #6b778C;
+    color: #6b778c;
   }
 
   .desktop-project-year {
@@ -664,7 +662,7 @@ textarea {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #6b778C;
+    color: #6b778c;
   }
 
   .desktop-work-project-description {
@@ -678,7 +676,7 @@ textarea {
   .project-link-button:hover {
     background: #6070ff;
     box-shadow: px 8px 16px rgba(64, 83, 252, 0.24);
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .project-link-button:active {
@@ -722,7 +720,7 @@ textarea {
   }
 
   .contact-form-description {
-    width: 569px
+    width: 569px;
   }
 
   .form-fields {
