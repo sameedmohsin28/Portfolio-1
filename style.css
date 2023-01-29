@@ -83,6 +83,20 @@ nav {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .intro-description {
@@ -161,7 +175,7 @@ nav {
 }
 
 .work-project-image:hover {
-  width: 80%
+  width: 80%;
 }
 
 .work-project-details {
